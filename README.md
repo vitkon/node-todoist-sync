@@ -8,8 +8,12 @@
 Install the module with: `npm install node-todoist-sync`
 
 ```js
-var node-todoist-sync = require('node-todoist-sync');
-node-todoist-sync.awesome(); // "awesome"
+var nodeTodoistSync = require('../lib/node-todoist-sync.js');
+
+var client = new nodeTodoistSync({
+	email: 'youe@email.com',
+	password: 'YourPassword'
+});
 ```
 
 Install with cli command
