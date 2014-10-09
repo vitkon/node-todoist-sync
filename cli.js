@@ -2,7 +2,7 @@
 
 'use strict';
 
-var nodeTodoistSync = require('./node-todoist-sync');
+var nodeTodoistSync = require('./lib/node-todoist-sync');
 
 var userArgs = process.argv;
 var searchParam = userArgs[2];

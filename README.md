@@ -11,25 +11,16 @@ Install the module with: `npm install node-todoist-sync`
 var nodeTodoistSync = require('../lib/node-todoist-sync.js');
 
 var client = new nodeTodoistSync({
-	email: 'youe@email.com',
-	password: 'YourPassword'
+	email: 'your@email.com',
+	password: 'YourPassword',
+	seq_no: 0 // seq_no=0 for initial sync
+});
+
+// fetch all data from Todoist
+client.fetchData().then(function (response) {
+	console.log(response);
 });
 ```
-
-Install with cli command
-
-```sh
-$ npm install -g node-todoist-sync
-$ node-todoist-sync --help
-$ node-todoist-sync --version
-```
-
-
-```sh
-# creates a browser.js
-$ grunt browserify
-```
-
 
 
 ## Documentation

@@ -1,11 +1,21 @@
 'use strict';
 
 var nodeTodoistSync = require('../lib/node-todoist-sync.js');
+var q = require('q');
+
+//console.log(nodeTodoistSync);
 
 var client = new nodeTodoistSync({
-	email: 'test@user.com',
+	email: 'user@gmail.com',
 	password: '123qwe',
-	seq_no: 2233960073
+	seq_no: 0
 });
 
-client.fetchData();
+
+//var a = client.fetchData();
+
+//console.log(a);
+
+client.fetchData().then(function (response) {
+	console.log(response);
+});
