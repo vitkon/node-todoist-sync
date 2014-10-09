@@ -6,7 +6,7 @@ var q = require('q');
 //console.log(nodeTodoistSync);
 
 var client = new nodeTodoistSync({
-	email: 'user@gmail.com',
+	email: 'test@gmail.com',
 	password: '123qwe',
 	seq_no: 0
 });

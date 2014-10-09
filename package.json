@@ -1,6 +1,6 @@
 {
   "name": "node-todoist-sync",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/node-todoist-sync.js",
   "description": "Todoist sync API for Node",
   "homepage": "https://github.com/vitkon/node-todoist-sync",
